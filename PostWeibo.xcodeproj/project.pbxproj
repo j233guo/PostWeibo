@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9124072295C13F60095F4E1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9124071295C13F60095F4E1 /* Post.swift */; };
 		C9D34898295ABB3500B88524 /* PostWeiboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D34897295ABB3500B88524 /* PostWeiboApp.swift */; };
 		C9D3489A295ABB3500B88524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D34899295ABB3500B88524 /* ContentView.swift */; };
 		C9D3489C295ABB3600B88524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D3489B295ABB3600B88524 /* Assets.xcassets */; };
@@ -119,6 +120,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9124071295C13F60095F4E1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C9D34894295ABB3500B88524 /* PostWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D34897295ABB3500B88524 /* PostWeiboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWeiboApp.swift; sourceTree = "<group>"; };
 		C9D34899295ABB3500B88524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -241,6 +243,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9124070295C13EB0095F4E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9124071295C13F60095F4E1 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C9D3488B295ABB3500B88524 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +274,7 @@
 		C9D34896295ABB3500B88524 /* PostWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				C9124070295C13EB0095F4E1 /* Models */,
 				C9D348C4295ABFF700B88524 /* Resources */,
 				C9D348C1295ABC2600B88524 /* Views */,
 				C9D34897295ABB3500B88524 /* PostWeiboApp.swift */,
@@ -615,6 +626,7 @@
 				C9D34898295ABB3500B88524 /* PostWeiboApp.swift in Sources */,
 				C9D348C3295ABC3500B88524 /* PostCell.swift in Sources */,
 				C9D3496C295AC13A00B88524 /* VipBadge.swift in Sources */,
+				C9124072295C13F60095F4E1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
