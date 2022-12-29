@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        PostCell(post: postList.list[0])
+        PostListView()
     }
 }
 

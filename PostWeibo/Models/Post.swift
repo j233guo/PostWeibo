@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Post: Codable {
+struct Post: Codable, Identifiable {
     let id: Int
     let avatar: String // name of profile photo
     let vip: Bool // whether user is vip
@@ -19,6 +19,22 @@ struct Post: Codable {
     var commentCount: Int
     var likeCount: Int
     var isLiked: Bool
+}
+
+extension Post {
+    // Display comment count or "Comment" on comment button
+    var commentCountText: String {
+        if commentCount == 0 { return "Comment" }
+        if commentCount < 1000 { return "\(commentCount)"}
+        return String(format: "%.1fk", Double(commentCount)/1000)
+    }
+    
+    // Display like count or "Like" on like button
+    var likeCountText: String {
+        if likeCount == 0 { return "Like" }
+        if likeCount < 1000 { return "\(likeCount)" }
+        return String(format: "%.1fk", Double(likeCount)/1000)
+    }
 }
 
 struct PostList: Codable {
