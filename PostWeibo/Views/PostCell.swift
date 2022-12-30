@@ -13,7 +13,7 @@ struct PostCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 5) {
-                Image(uiImage: UIImage(named: post.avatar)!)
+                loadImage(post.avatar)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 50, height: 50)
@@ -56,11 +56,7 @@ struct PostCell: View {
                 .font(.system(size: 17))
             
             if !post.images.isEmpty {
-                Image(uiImage: UIImage(named: post.images[0])!)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width - 30, height: (UIScreen.main.bounds.width - 30) * 0.75)
-                    .clipped()
+                PostImageCell(images: post.images, width: UIScreen.main.bounds.width - 30)
             }
             
             Divider()
