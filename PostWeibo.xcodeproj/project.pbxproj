@@ -12,6 +12,7 @@
 		C94FAC0A295D501A00777914 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FAC09295D501A00777914 /* PostListView.swift */; };
 		C9CAD28F295E8C580035F3F9 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAD28E295E8C580035F3F9 /* PostImageCell.swift */; };
 		C9CAD295295E8ED40035F3F9 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAD294295E8ED40035F3F9 /* LoadImage.swift */; };
+		C9CAD297295EAD320035F3F9 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAD296295EAD320035F3F9 /* PostDetailView.swift */; };
 		C9D34898295ABB3500B88524 /* PostWeiboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D34897295ABB3500B88524 /* PostWeiboApp.swift */; };
 		C9D3489A295ABB3500B88524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D34899295ABB3500B88524 /* ContentView.swift */; };
 		C9D3489C295ABB3600B88524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D3489B295ABB3600B88524 /* Assets.xcassets */; };
@@ -129,6 +130,7 @@
 		C94FAC09295D501A00777914 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		C9CAD28E295E8C580035F3F9 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		C9CAD294295E8ED40035F3F9 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
+		C9CAD296295EAD320035F3F9 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		C9D34894295ABB3500B88524 /* PostWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D34897295ABB3500B88524 /* PostWeiboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWeiboApp.swift; sourceTree = "<group>"; };
 		C9D34899295ABB3500B88524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				C9D348C2295ABC3500B88524 /* PostCell.swift */,
 				C94FAC09295D501A00777914 /* PostListView.swift */,
 				C9CAD28E295E8C580035F3F9 /* PostImageCell.swift */,
+				C9CAD296295EAD320035F3F9 /* PostDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -643,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9D3489A295ABB3500B88524 /* ContentView.swift in Sources */,
+				C9CAD297295EAD320035F3F9 /* PostDetailView.swift in Sources */,
 				C94FAC07295D4C0300777914 /* PostCellToolbarButton.swift in Sources */,
 				C9D34898295ABB3500B88524 /* PostWeiboApp.swift in Sources */,
 				C9D348C3295ABC3500B88524 /* PostCell.swift in Sources */,

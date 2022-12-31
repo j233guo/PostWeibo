@@ -19,7 +19,7 @@ struct PostListView: View {
             ForEach(postList.list) { post in
                 ZStack {
                     PostCell(post: post)
-                    NavigationLink(destination: Text("detail of \(post.id)")) {
+                    NavigationLink(destination: PostDetailView(post: post)) {
                         EmptyView()
                     }
                 }
