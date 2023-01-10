@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C9124072295C13F60095F4E1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9124071295C13F60095F4E1 /* Post.swift */; };
+		C9135FDF296CF6B400A7734C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9135FDE296CF6B400A7734C /* CoreServices.framework */; };
 		C94FAC07295D4C0300777914 /* PostCellToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FAC06295D4C0300777914 /* PostCellToolbarButton.swift */; };
 		C94FAC0A295D501A00777914 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FAC09295D501A00777914 /* PostListView.swift */; };
 		C9CAD28F295E8C580035F3F9 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAD28E295E8C580035F3F9 /* PostImageCell.swift */; };
 		C9CAD295295E8ED40035F3F9 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAD294295E8ED40035F3F9 /* LoadImage.swift */; };
 		C9CAD297295EAD320035F3F9 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CAD296295EAD320035F3F9 /* PostDetailView.swift */; };
+		C9CE8BBA296BA7C600DEF143 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE8BB9296BA7C600DEF143 /* HomeView.swift */; };
+		C9CE8BBC296CF33100DEF143 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE8BBB296CF33100DEF143 /* UserData.swift */; };
 		C9D34898295ABB3500B88524 /* PostWeiboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D34897295ABB3500B88524 /* PostWeiboApp.swift */; };
 		C9D3489A295ABB3500B88524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D34899295ABB3500B88524 /* ContentView.swift */; };
 		C9D3489C295ABB3600B88524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D3489B295ABB3600B88524 /* Assets.xcassets */; };
@@ -105,6 +108,7 @@
 		C9D34969295ABFF700B88524 /* 6ec3b446gy1gavd523embj20j60pytd6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9D34916295ABFF700B88524 /* 6ec3b446gy1gavd523embj20j60pytd6.jpg */; };
 		C9D3496A295ABFF700B88524 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9D34917295ABFF700B88524 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */; };
 		C9D3496C295AC13A00B88524 /* VipBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3496B295AC13A00B88524 /* VipBadge.swift */; };
+		C9D3B5C8295FCEF900F6BF57 /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3B5C7295FCEF900F6BF57 /* HomeNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,11 +130,14 @@
 
 /* Begin PBXFileReference section */
 		C9124071295C13F60095F4E1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C9135FDE296CF6B400A7734C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		C94FAC06295D4C0300777914 /* PostCellToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellToolbarButton.swift; sourceTree = "<group>"; };
 		C94FAC09295D501A00777914 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		C9CAD28E295E8C580035F3F9 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		C9CAD294295E8ED40035F3F9 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		C9CAD296295EAD320035F3F9 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		C9CE8BB9296BA7C600DEF143 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C9CE8BBB296CF33100DEF143 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C9D34894295ABB3500B88524 /* PostWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D34897295ABB3500B88524 /* PostWeiboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWeiboApp.swift; sourceTree = "<group>"; };
 		C9D34899295ABB3500B88524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -226,6 +233,7 @@
 		C9D34916295ABFF700B88524 /* 6ec3b446gy1gavd523embj20j60pytd6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6ec3b446gy1gavd523embj20j60pytd6.jpg; sourceTree = "<group>"; };
 		C9D34917295ABFF700B88524 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005tnxzUly8gab4i2r73xj30u00u0js8.jpg; sourceTree = "<group>"; };
 		C9D3496B295AC13A00B88524 /* VipBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipBadge.swift; sourceTree = "<group>"; };
+		C9D3B5C7295FCEF900F6BF57 /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9135FDF296CF6B400A7734C /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +267,17 @@
 			children = (
 				C9124071295C13F60095F4E1 /* Post.swift */,
 				C9CAD294295E8ED40035F3F9 /* LoadImage.swift */,
+				C9CE8BBB296CF33100DEF143 /* UserData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C9135FDD296CF6B400A7734C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9135FDE296CF6B400A7734C /* CoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C94FAC08295D4FF300777914 /* Widgets */ = {
@@ -278,6 +296,7 @@
 				C9D348A7295ABB3600B88524 /* PostWeiboTests */,
 				C9D348B1295ABB3600B88524 /* PostWeiboUITests */,
 				C9D34895295ABB3500B88524 /* Products */,
+				C9135FDD296CF6B400A7734C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -338,6 +357,8 @@
 				C94FAC09295D501A00777914 /* PostListView.swift */,
 				C9CAD28E295E8C580035F3F9 /* PostImageCell.swift */,
 				C9CAD296295EAD320035F3F9 /* PostDetailView.swift */,
+				C9D3B5C7295FCEF900F6BF57 /* HomeNavigationBar.swift */,
+				C9CE8BB9296BA7C600DEF143 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -645,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CE8BBC296CF33100DEF143 /* UserData.swift in Sources */,
 				C9D3489A295ABB3500B88524 /* ContentView.swift in Sources */,
 				C9CAD297295EAD320035F3F9 /* PostDetailView.swift in Sources */,
 				C94FAC07295D4C0300777914 /* PostCellToolbarButton.swift in Sources */,
@@ -652,7 +674,9 @@
 				C9D348C3295ABC3500B88524 /* PostCell.swift in Sources */,
 				C9D3496C295AC13A00B88524 /* VipBadge.swift in Sources */,
 				C9124072295C13F60095F4E1 /* Post.swift in Sources */,
+				C9D3B5C8295FCEF900F6BF57 /* HomeNavigationBar.swift in Sources */,
 				C9CAD295295E8ED40035F3F9 /* LoadImage.swift in Sources */,
+				C9CE8BBA296BA7C600DEF143 /* HomeView.swift in Sources */,
 				C94FAC0A295D501A00777914 /* PostListView.swift in Sources */,
 				C9CAD28F295E8C580035F3F9 /* PostImageCell.swift in Sources */,
 			);
@@ -798,6 +822,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
