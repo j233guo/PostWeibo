@@ -109,6 +109,7 @@
 		C9D3496A295ABFF700B88524 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9D34917295ABFF700B88524 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */; };
 		C9D3496C295AC13A00B88524 /* VipBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3496B295AC13A00B88524 /* VipBadge.swift */; };
 		C9D3B5C8295FCEF900F6BF57 /* HomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3B5C7295FCEF900F6BF57 /* HomeNavigationBar.swift */; };
+		C9EA0A0A29762EBB00A897FC /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA0A0929762EBB00A897FC /* HScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +235,7 @@
 		C9D34917295ABFF700B88524 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005tnxzUly8gab4i2r73xj30u00u0js8.jpg; sourceTree = "<group>"; };
 		C9D3496B295AC13A00B88524 /* VipBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipBadge.swift; sourceTree = "<group>"; };
 		C9D3B5C7295FCEF900F6BF57 /* HomeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationBar.swift; sourceTree = "<group>"; };
+		C9EA0A0929762EBB00A897FC /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 		C9D348C1295ABC2600B88524 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9EA0A0B29762EE400A897FC /* UIViewControllers */,
 				C94FAC08295D4FF300777914 /* Widgets */,
 				C9D34899295ABB3500B88524 /* ContentView.swift */,
 				C9D348C2295ABC3500B88524 /* PostCell.swift */,
@@ -451,6 +454,14 @@
 				C9D34917295ABFF700B88524 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9EA0A0B29762EE400A897FC /* UIViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA0A0929762EBB00A897FC /* HScrollViewController.swift */,
+			);
+			path = UIViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -668,6 +679,7 @@
 			files = (
 				C9CE8BBC296CF33100DEF143 /* UserData.swift in Sources */,
 				C9D3489A295ABB3500B88524 /* ContentView.swift in Sources */,
+				C9EA0A0A29762EBB00A897FC /* HScrollViewController.swift in Sources */,
 				C9CAD297295EAD320035F3F9 /* PostDetailView.swift in Sources */,
 				C94FAC07295D4C0300777914 /* PostCellToolbarButton.swift in Sources */,
 				C9D34898295ABB3500B88524 /* PostWeiboApp.swift in Sources */,

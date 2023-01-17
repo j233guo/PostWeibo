@@ -14,20 +14,24 @@ struct HomeView: View {
         UITableViewCell.appearance().selectionStyle = .none
     }
     
+    @State var leftPercent: CGFloat = 0
+    
     var body: some View {
         NavigationView {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 0) {
-                    PostListView(category: .featured)
-                        .frame(width: UIScreen.main.bounds.width)
-                    PostListView(category: .hot)
-                        .frame(width: UIScreen.main.bounds.width)
+            GeometryReader { geometry in
+                HScrollViewController(pageWidth: geometry.size.width, contentSize: CGSize(width: geometry.size.width * 2, height: geometry.size.height), leftPercent: self.$leftPercent
+                ) {
+                    HStack(spacing: 0) {
+                        PostListView(category: .featured)
+                            .frame(width: UIScreen.main.bounds.width)
+                        PostListView(category: .hot)
+                            .frame(width: UIScreen.main.bounds.width)
+                    }
                 }
             }
-            .navigationBarItems(leading: HomeNavigationBar(leftPercent: 0))
+            .navigationBarItems(leading: HomeNavigationBar(leftPercent: $leftPercent))
             .navigationTitle("Title")
             .navigationBarTitleDisplayMode(.inline)
-            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
