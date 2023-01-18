@@ -24,14 +24,14 @@ struct Post: Codable, Identifiable {
 extension Post {
     // Display comment count or "Comment" on comment button
     var commentCountText: String {
-        if commentCount == 0 { return "Comment" }
+        if commentCount == 0 { return "评论" }
         if commentCount < 1000 { return "\(commentCount)"}
         return String(format: "%.1fk", Double(commentCount)/1000)
     }
     
     // Display like count or "Like" on like button
     var likeCountText: String {
-        if likeCount == 0 { return "Like" }
+        if likeCount == 0 { return "赞" }
         if likeCount < 1000 { return "\(likeCount)" }
         return String(format: "%.1fk", Double(likeCount)/1000)
     }
@@ -53,5 +53,3 @@ func loadPostListData(_ fileName: String) -> PostList {
     }
     return list
 }
-
-let postList = loadPostListData("PostListData_recommend_1.json")

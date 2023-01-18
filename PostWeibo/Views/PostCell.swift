@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct PostCell: View {
+    @EnvironmentObject var userData: UserData
+    
     let post: Post
     
+    var bindingPost: Post {
+        userData.post(forId: post.id)!
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {
+        var post = bindingPost
+        return VStack(alignment: .leading) {
             HStack(spacing: 5) {
                 loadImage(post.avatar)
                     .resizable()
@@ -37,9 +44,10 @@ struct PostCell: View {
                 if !post.isFollowed {
                     Spacer()
                     Button {
-                        print("Clicked follow button")
+                        post.isFollowed = true
+                        userData.update(post)
                     } label: {
-                        Text("Follow")
+                        Text("关注")
                             .font(.system(size: 14.0))
                             .foregroundColor(.orange)
                             .frame(width: 50, height: 26)
@@ -67,8 +75,15 @@ struct PostCell: View {
                     print("Clicked comment button")
                 }
                 Spacer()
-                PostCellToolbarButton(image: "heart", text: post.likeCountText, color: .black) {
-                    print("Clicked like button")
+                PostCellToolbarButton(image: post.isLiked ? "heart.fill" : "heart", text: post.likeCountText, color: post.isLiked ? .red : .black) {
+                    if post.isLiked {
+                        post.isLiked = false
+                        post.likeCount -= 1
+                    } else {
+                        post.isLiked = true
+                        post.likeCount += 1
+                    }
+                    userData.update(post)
                 }
                 Spacer()
             }
@@ -85,6 +100,8 @@ struct PostCell: View {
 
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
-        PostCell(post: postList.list[0])
+        let userData = UserData()
+        PostCell(post: userData.recommendPostList.list[0])
+            .environmentObject(UserData())
     }
 }

@@ -15,17 +15,19 @@ struct PostDetailView: View {
             PostCell(post: post)
                 .listRowInsets(EdgeInsets())
             ForEach(1...10, id: \.self) { i in
-                Text("comment \(i)")
+                Text("评论 \(i)")
             }
         }
         .listStyle(.plain)
-        .navigationTitle("Post Detail")
+        .navigationTitle("详情")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct PostDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PostDetailView(post: postList.list[0])
+        let userData = UserData()
+        return PostDetailView(post: userData.recommendPostList.list[0])
+            .environmentObject(userData)
     }
 }

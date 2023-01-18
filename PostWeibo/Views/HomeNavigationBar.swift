@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-fileprivate let LABEL_WIDTH: CGFloat = 80
+fileprivate let LABEL_WIDTH: CGFloat = 60
 fileprivate let BUTTON_HEIGHT: CGFloat = 24
 
 struct HomeNavigationBar: View {
@@ -31,7 +31,7 @@ struct HomeNavigationBar: View {
             
             VStack(spacing: 3) {
                 HStack(spacing: 0) {
-                    Text("For You")
+                    Text("推荐")
                         .font(.body)
                         .bold()
                         .frame(width: LABEL_WIDTH, height: BUTTON_HEIGHT)
@@ -44,7 +44,7 @@ struct HomeNavigationBar: View {
                     }
                     
                     Spacer()
-                    Text("Hot Posts")
+                    Text("热门")
                         .font(.body)
                         .bold()
                         .frame(width: LABEL_WIDTH)
