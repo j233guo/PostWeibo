@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PostCell: View {
     @EnvironmentObject var userData: UserData
+    @State private var presentComment = false
     
     let post: Post
     
@@ -71,10 +72,17 @@ struct PostCell: View {
             
             HStack(spacing: 0) {
                 Spacer()
+                
                 PostCellToolbarButton(image: "ellipsis.message", text: post.commentCountText, color: .black) {
-                    print("Clicked comment button")
+                    presentComment = true
                 }
+                .sheet(isPresented: $presentComment) {
+                    CommentInputView(post: post)
+                        .environmentObject(userData)
+                }
+                
                 Spacer()
+                
                 PostCellToolbarButton(image: post.isLiked ? "heart.fill" : "heart", text: post.likeCountText, color: post.isLiked ? .red : .black) {
                     if post.isLiked {
                         post.isLiked = false
@@ -85,6 +93,7 @@ struct PostCell: View {
                     }
                     userData.update(post)
                 }
+                
                 Spacer()
             }
             

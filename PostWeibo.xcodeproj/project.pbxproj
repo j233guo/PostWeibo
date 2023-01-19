@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9039EE62978B9CC00687C29 /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9039EE52978B9CC00687C29 /* CommentInputView.swift */; };
+		C9039EE82978BC7D00687C29 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9039EE72978BC7D00687C29 /* CommentTextView.swift */; };
+		C9039EEB2978BE6F00687C29 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9039EEA2978BE6F00687C29 /* KeyboardResponder.swift */; };
 		C9124072295C13F60095F4E1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9124071295C13F60095F4E1 /* Post.swift */; };
 		C9135FDF296CF6B400A7734C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9135FDE296CF6B400A7734C /* CoreServices.framework */; };
 		C94FAC07295D4C0300777914 /* PostCellToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94FAC06295D4C0300777914 /* PostCellToolbarButton.swift */; };
@@ -130,6 +133,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9039EE52978B9CC00687C29 /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
+		C9039EE72978BC7D00687C29 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
+		C9039EEA2978BE6F00687C29 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		C9124071295C13F60095F4E1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C9135FDE296CF6B400A7734C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		C94FAC06295D4C0300777914 /* PostCellToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellToolbarButton.swift; sourceTree = "<group>"; };
@@ -264,12 +270,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9039EE92978BE3E00687C29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C9CAD294295E8ED40035F3F9 /* LoadImage.swift */,
+				C9CE8BBB296CF33100DEF143 /* UserData.swift */,
+				C9039EEA2978BE6F00687C29 /* KeyboardResponder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C9124070295C13EB0095F4E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				C9124071295C13F60095F4E1 /* Post.swift */,
-				C9CAD294295E8ED40035F3F9 /* LoadImage.swift */,
-				C9CE8BBB296CF33100DEF143 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,6 +329,7 @@
 		C9D34896295ABB3500B88524 /* PostWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				C9039EE92978BE3E00687C29 /* Services */,
 				C9124070295C13EB0095F4E1 /* Models */,
 				C9D348C4295ABFF700B88524 /* Resources */,
 				C9D348C1295ABC2600B88524 /* Views */,
@@ -362,6 +377,8 @@
 				C9CAD296295EAD320035F3F9 /* PostDetailView.swift */,
 				C9D3B5C7295FCEF900F6BF57 /* HomeNavigationBar.swift */,
 				C9CE8BB9296BA7C600DEF143 /* HomeView.swift */,
+				C9039EE52978B9CC00687C29 /* CommentInputView.swift */,
+				C9039EE72978BC7D00687C29 /* CommentTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -678,12 +695,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9CE8BBC296CF33100DEF143 /* UserData.swift in Sources */,
+				C9039EEB2978BE6F00687C29 /* KeyboardResponder.swift in Sources */,
 				C9D3489A295ABB3500B88524 /* ContentView.swift in Sources */,
 				C9EA0A0A29762EBB00A897FC /* HScrollViewController.swift in Sources */,
+				C9039EE82978BC7D00687C29 /* CommentTextView.swift in Sources */,
 				C9CAD297295EAD320035F3F9 /* PostDetailView.swift in Sources */,
 				C94FAC07295D4C0300777914 /* PostCellToolbarButton.swift in Sources */,
 				C9D34898295ABB3500B88524 /* PostWeiboApp.swift in Sources */,
 				C9D348C3295ABC3500B88524 /* PostCell.swift in Sources */,
+				C9039EE62978B9CC00687C29 /* CommentInputView.swift in Sources */,
 				C9D3496C295AC13A00B88524 /* VipBadge.swift in Sources */,
 				C9124072295C13F60095F4E1 /* Post.swift in Sources */,
 				C9D3B5C8295FCEF900F6BF57 /* HomeNavigationBar.swift in Sources */,
@@ -856,8 +876,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -885,8 +905,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
